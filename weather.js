@@ -1,6 +1,3 @@
-//4669173d3fbd36cca34554c076c3685d
-//https://api.openweathermap.org/data/2.5/weather?q=${inp}&appid=${apikey}&units=metric
-
 async function ser() {
     let inp = document.getElementById("inp").value;
     let apikey = `4669173d3fbd36cca34554c076c3685d`;
@@ -98,4 +95,7 @@ async function ser() {
         document.getElementById("location").innerHTML = "Location not found";
         alert("Some is wrong! Try again. Check your network connection.");
     }
+
 }
+
+console.log("hello");
