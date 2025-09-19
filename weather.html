@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="weather.css">
+    <title>weather</title>
+</head>
+<body>
+    <div class="main">
+        <div class="inpbox">
+            <input id="inp" type="text" placeholder="Enter location">
+            <button onclick="ser()"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="location">
+            <h2 id="location">Your Location</h2>
+            <h3 id="country">Country</h3>
+            <h1><span id="temp">0</span><sup>0</sup>C</h1>
+        </div>
+
+        <div class="image-section" id="image">
+            <img src="error-img.png" alt="" srcset="">
+        </div>
+
+        <div class="description">
+            <h3 id="description">Unknown</h3>
+        </div>
+
+        <div class="details-section">
+            <div class="details">
+                <span><p>wind speed</p><p id="wind">0 Km/H</p></span>
+                <span><p>wind direction</p><p id="dir">N--N</p></span>
+                <span><p>Humidity</p><p id="humidity">0%</p></span>
+                <span><p>sun rise</p><p id="rise">00:00:00</p></span>
+                <span><p>sun set</p><p id="set">00:00:00</p></span>
+            </div>
+            <div class="details">
+                <span><p>AQI</p><p id="aqi">N/A</p></span>
+                <span><p>Chance of Rain</p><p id="chance">0%</p></span>
+                <span><p>pressure</p><p id="pressure">0 MB</p></span>
+                <span><p>lat</p><p id="lat">0</p></span>
+                <span><p>lon</p><p id="lon">0</p></span>
+            </div>
+        </div>
+
+    </div> <!--main-->
+</body>
+<script src="weather.js"></script>
+</html>
